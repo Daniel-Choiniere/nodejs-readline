@@ -6,7 +6,8 @@ fs.readFile('readme.txt', 'utf8', function(err, data) {
     
     let split = data.split("\n");
     
+    for (let i=0; i<split.length; i++) {
+        console.log("The data on line", i + 1, "is", split[i]);
+    }
     
-    console.log("The data on line 1 is", split[0]);
-    console.log("The data on line 2 is", split[1]);
 });
